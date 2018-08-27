@@ -5,6 +5,7 @@
 }
 
 body {
+  font-family: 'Cabin', sans-serif;
   margin: 0;
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(33,147,176,1) 0%, rgba(109,213,237,0.8589810924369747) 100%);
@@ -65,6 +66,27 @@ h1 {
 .matched .back {
   opacity: 0;
   backface-visibility: visible;
+}
+
+.completion-message {
+
+  width: 50%;
+  height: 150px;
+  margin: 20% auto;
+  text-align: center;
+  background: #fff;
+  border-radius: 4px;
+  border: 3px solid #d820a6;
+  color: #2c3f58;
+}
+
+.completion-message button {
+  font-size: 14px;
+  padding: 8px 14px;
+  border-radius: 2px;
+  color: #fff;
+  background: #d820a6;
+  border: none;
 }
 
 .hide {

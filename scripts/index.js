@@ -1,12 +1,12 @@
 const memes = [{
     matchId: 1,
     img: 'img/meme1.png',
-    alt: "Busy day meme",
+    alt: "Ross is fine meme",
 
   },{
     matchId: 2,
     img: 'img/meme2.png',
-    alt: "Busy day meme"
+    alt: "Existential crisis meme"
   },{
     matchId: 3,
     img: 'img/meme3.png',
@@ -14,17 +14,17 @@ const memes = [{
   },{
     matchId: 4,
     img: 'img/meme4.png',
-    alt: "Busy day meme",
+    alt: "Smart kid meme",
   },
   {
     matchId: 5,
     img: 'img/meme5.png',
-    alt: "Busy day meme",
+    alt: "Relationship status meme",
   },
   {
     matchId: 6,
     img: 'img/meme6.png',
-    alt: "Busy day meme",
+    alt: "Why is Drake so worried meme",
   }];
 
 $(function() {

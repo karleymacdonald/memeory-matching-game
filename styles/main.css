@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(33,147,176,1) 0%, rgba(109,213,237,0.8589810924369747) 100%);
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  color: #2c3f58;
+}
+
+.grid {
+  max-width: 624px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  transition: transform .4s linear;
+  transform-style: preserve-3d;
+  margin: 3px;
+}
+
+.card,
+.back,
+.front {
+  height: 150px;
+  width: 150px;
+  border-radius: 5px;
+}
+
+.back,
+.front {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  background: #f7e9f1 url('../img/question-mark.png') no-repeat center center ;
+
+}
+
+.back {
+  transform: rotateY(180deg);
+  background:  no-repeat center center / contain;
+}
+
+.selected {
+  transform: rotateY(180deg);
+}
+
+.matched {
+  opacity: 0;
+}
+
+.matched .back {
+  opacity: 0;
+  backface-visibility: visible;
+}
+
+.hide {
+  display: none;
+}
